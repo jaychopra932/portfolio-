@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;}
+
+.bg-img {
+  /* The image used */
+  background-image: url("img1.jpg");
+  
+  width: 1348px;
+  height: 630px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* Navbar links */
+#logo{
+    
+    float: left;
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;}
+#logo:hover{
+    font-size: 37px;
+}
+.topnav a {
+  float: left;
+  
+  color: #f2f2f2;
+  text-align: end;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.topnav a:hover {
+  
+  color: red;
+  background-color: transparent;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.topnav a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+#about{
+    background-color: transparent;
+    text-align: left;
+    color: white;
+    padding-top: 200px;
+    padding-left: 150px;
+    
+}
+#line1{
+    font-size: 27px;
+}
+#line2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+#line3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+#line3 span{
+    color: crimson;
+    font-weight: 500;
+    font-size: 45px;
+}
+#aboutme{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: center;
+    font-size: 40px;
+    
+}
+#who::before{
+    content: " ";
+    margin-left: 100px;
+    display: block;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    background-color:black;
+}
+#who::after{
+    content: " ";
+    display: block;
+    margin-right: 100px;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background:black;
+    justify-content: space-between;
+}
+#who{
+    font-family: Arial, Helvetica, sans-serif ;
+    margin-left: 475px;
+    font-size: 20px;
+    position: relative;
+    max-width: 400px;
+    
+    text-align: center;
+}
+#img2{
+    border-radius: 12px;
+    margin-left: 150px;
+    width: 400px;
+    height: 400px;
+    max-width: 400px;
+    float: left;
+    margin-bottom: 50px;
+}
+#sec1{
+    float: right;
+    max-height: 50px;
+    font-size: 25px;
+    margin-top: 100px;
+    padding-right: 271px;
+    text-align: center;
+    
+}
+#sec2{
+    float: right;
+    font-size: 20px;
+    padding-right: 200px;
+    margin-top: 30px;
+    text-align: left;
+}
+#myskill{
+    font-style: arial;
+    padding-top: 70PX;
+    text-align: center;
+    font-size: 40px;
+    color: #f2f2f2;
+    margin-top: 500px;
+    margin-bottom: px;
+    background-color: black;
+}
+#what::before{
+    content: " ";
+    margin-left: 540px;
+    display: block;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    background-color:white;
+}
+#what::after{
+   
+    content: " ";
+    display: block;
+    margin-right: 540px;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background:white;
+    justify-content: space-between;
+}
+#what{
+    align-items: center;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif ;
+    
+    font-size: 20px;
+    position: relative;
+    max-width: 1348px;
+    padding-top: 5px;
+    text-align: center;
+    
+}
+#skill1{
+    
+    padding: 30px;
+    font-size: 40px;
+    width: 600px;
+    height: 200px;
+    align-items: center;
+    float: left;
+    background-color: grey;
+    border-top: 20px black solid;
+    border-left: 300px solid black;
+    border-bottom: 50px solid black;
+}
+#skill1:hover{
+    padding: 30px;
+    font-size: 40px;
+    width: 600px;
+    height: 200px;
+    align-items: center;
+    float: left;
+    background-color: grey;
+    border-top: 20px black solid;
+    border-left: 250px solid black;
+    border-bottom: 50px solid black;
+
+}
+    
+
+</style>
+</head>
+<body>
+
+
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+        <a id="logo" href="javascript:void(0)">Port<span>folio</span></a>
+        
+      <a  href="javascript:void(0)">Home</a>
+      <a  href="javascript:void(0)">About</a>
+      <a  href="javascript:void(0)">Skills</a>
+      <a  href="javascript:void(0)">Contact</a>
+    </div>
+  </div>
+  <div id="about">
+    <p id="line1">Hello, This is</p>
+    <div><p id="line2">Jai Chopra</p>
+        <div>
+            <p id="line3">And I'm a <span>Developer</span></p>
+        </div>
+    </div>
+</div>
+</div>
+<br><br><br><br>
+<p id="aboutme">About me</p>
+<p id="who"><span style="color:red">who i am</span></p>
+<br><br>
+<div >
+    <img id="img2" src="img2.jpeg" >
+    <div id="sec1">
+        <p><b>I'm Jai and I'm a <span style="color: red"> Developer</span></b></p>
+    </div>
+    <div id="sec2">
+        <p>I am Jai Chopra from Rohtak pursuing MCA <br>at Maharishi Dayanand 
+            Univeristy , Rohtak .<br>Nowadays I am
+             learning Web Development<br>in languages like HTML, CSS, JavaScript.</p>
+    </div>
+    
+</div>
+<div id="myskill" >
+    My Skills
+</div>
+<p id="what"><span style="color:red">what i provide</span></p>
+<div id="skill1">
+   <p> Web Design</p>
+   
+</div>
+
+
+
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var topnav = document.getElementById("topnav");
+    var sticky = topnav.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        topnav.classList.add("sticky")
+      } else {
+        topnav.classList.remove("sticky");
+      }
+    }
+</script>
+
+
+
+
+</body>
+</html>
